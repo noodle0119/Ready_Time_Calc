@@ -1,0 +1,46 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ready Time Calc</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <h1 class="title">Ready Time Calculator</h1>
+</header>
+  
+<body>
+    <div class="content">
+        <div class="time_val">
+            <div class="start">
+                <h3 class="start-title">Time of Arival</h3>
+                <input class="start-time" id="start-time" type="time" value="00:00"/>
+            </div>
+            <div class="end">
+                <h3 class="end-title">Start time</h3>
+                <p><span id="values"></span></p>
+            </div>
+        </div>
+        <div class="steps">
+            <h3 class="steps-title">Steps before arrival</h3>
+            <div class="step_list" id="step-list">
+                <div class="step-element">
+                    <div class="id-wrapper">
+                        <input type="text" class="step-title" placeholder="Title"/>
+                        <button class="remove"><img src="icons8-trash.svg" alt=""></button>
+                    </div>
+                    <input type="number" class="step-time" placeholder="Minutes"/>
+        
+                </div>
+            </div>
+            <div class="step_nav">
+                <button class="new-step" id="new-step" onclick="createNewStep()">Add a new step</button>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+  
